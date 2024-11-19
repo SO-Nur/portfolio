@@ -13,13 +13,13 @@
 
     <header>
         <nav>
-            <a href="#"><img class="logo" src="img/LogoSONur.svg" alt=""></a>
+            <a href="#top"><img class="logo" src="img/LogoSONur.svg" alt=""></a>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#top">Home</a></li>
+                <li><a href="#mySkills">Skills</a></li>
+                <li><a href="#myProjects">Projects</a></li>
+                <li><a href="#abt-me">About</a></li>
+                <li><a href="#contact-me">Contact</a></li>
             </ul>
         </nav>
         <section class="hero">
@@ -36,14 +36,15 @@
                     With a keen eye for detail and a passion for clean code, 
                     I create digital products that are both beautiful and functional.
                 </p>
-                <a href="#projects">See my works</a>
+                <a href="#myProjects">See my works</a>
             </div>
         </section>
     </header>
 
     <main>
+
         <!-- PROJECTS -->
-        <section class="projects" id="projects">
+        <section class="projects" id="myProjects">
             <aside>
                 <ul>
                     <li><a href="#developements">Developements</a></li>
@@ -97,7 +98,7 @@
         <!-- END PROJECTS -->
 
         <!-- SKILLS -->
-        <section class="skills" id="skills">
+        <section class="skills" id="mySkills">
             <h2>SKILLS</h2>
             <p>Technos & Tools</p>
             <div class="container">
@@ -193,12 +194,12 @@
         <!-- END SKILLS -->
 
         <!-- ABOUT -->
-        <section class="about">
+        <section class="about" id="abt-me">
             <aside>
                 <ul>
-                    <li><a href="#aboutme">About me</a></li>
-                    <li><a href="#experiences">Experiences</a></li>
-                    <li><a href="#education">Education</a></li>
+                    <li><a href="#abt-me">About me</a></li>
+                    <li><a href="#xp">Experiences</a></li>
+                    <li><a href="#edu">Education</a></li>
                 </ul>
             </aside>
             <div class="about-container">
@@ -229,7 +230,7 @@
                     </div>
                     <img src="" alt="">
                 </div>
-                <div class="experiences">
+                <div class="experiences" id="xp">
                     <h3>Experiences</h3>
                     <ul>
                         <li>
@@ -301,7 +302,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="education">
+                <div class="education" id="edu">
                     <h3>Education</h3>
                     <ul>
                         <li>
@@ -366,16 +367,21 @@
         <!-- END ABOUT -->
 
         <!-- CONTACT -->
-        <section class="contact">
+        <section class="contact" id="contact-me">
+            <div class="contact-left">
+                <h2>Get in touch</h2>
+                <p>Feel free to contact me for further informations</p>
+                <img src="img/contact.svg" alt="">
+            </div>            
             <form action="">
                 <label for="name">Nom :</label>
                 <input type="text">
                 <label for="email">Email :</label>
                 <input type="text">
-                <textarea name="message" id="" rows="12" cols="50">Message :</textarea>
+                <label for="message">Message :</label>
+                <textarea name="message" id="" rows="8" cols="50"></textarea>
                 <button type="submit">Send message</button>
-            </form>
-
+            </form>            
         </section>
         <!-- END CONTACT -->
 
@@ -384,8 +390,10 @@
             <i class="fa-solid fa-circle-arrow-up"></i>
         </a>
         <!-- END PAGE UP -->
+
     </main>
 
+    <!-- FOOTER -->
     <footer>
         <ul>
             <li><a href="https://www.linkedin.com/in/nur-sakifah-ouada/"><i class="fa-brands fa-linkedin"></i></a></li>
@@ -395,6 +403,7 @@
 
         <p>© 2024 Designed & developped by <span>SO-Nur</span> - All rights reserved</p>
     </footer>
+    <!-- END FOOTER -->
 
     <script src="https://kit.fontawesome.com/2d7ed0d845.js" crossorigin="anonymous"></script>
 
