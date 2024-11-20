@@ -46,8 +46,6 @@ nav ul {
     width: 300px;
     display: flex;
     justify-content: space-between;
-    /* color: #594a3e9c; */
-
 }
 nav a {
     color: #594a3e86;
@@ -164,10 +162,10 @@ aside li {
 
 /* skills */
 .skills {
-    padding-top: 60px;
+
 }
 .skills > p {
-    padding: 20px 0;
+    padding: 20px;
     font-weight: 600;
 }
 .container {
@@ -181,9 +179,6 @@ aside li {
     background-color: #E8E4E0;
     
 }
-
-
-
 .tech-list {
     width: 300px;
     height: 400px;
@@ -208,26 +203,33 @@ aside li {
 
 /* contact */
 .contact {
+    height: 600px;
+    background: linear-gradient(to right, #E8E4E0 10%, #fff);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     padding: 60px;
 }
 .contact-left img {
-    width: 40%;
+    width: 60%;
 }
 form {
     width: 600px;
-    height: 400px;
-    padding: 30px;
+    height: max-content;
+    padding: 40px;
     background-color: #E8E4E0;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     border-radius: 20px;
 }
+label {
+    padding-bottom: 2px;
+    font-size: 14px;
+}
 input {
     border-radius: 50px;
-    height: 30px;
+    height: 40px;
     margin-bottom: 20px;
     border: none;
 }
@@ -238,14 +240,16 @@ textarea {
 button{
     height: 30px;
     width: 120px;
-    margin-top: 10px;
+    margin-top: 20px;
     border-radius: 50px;
     border: none;
     color: #fff;
     background-color: #594a3e;
 }
-button :hover {
-    color: ;
+button:hover {
+    color: #594a3e;
+    background-color: #BDB2A7;
+}    
 /* end contact */
 
 /* pageUp */
@@ -262,6 +266,7 @@ button :hover {
 /* footer */
 footer {
     height: 50px;
+    margin-top: 40px;
     background-color: #594a3e;
     display: flex;
     justify-content: space-between;
@@ -270,6 +275,7 @@ footer {
 }
 footer ul {
     display: flex;
+    flex-direction: row;
 }
 footer ul i {
     color: #fff;
