@@ -20,6 +20,9 @@ h3 {
     font-weight: 600;
     margin-bottom: 20px;
 }
+h4 {
+    padding: 10px 0;
+}
 li {
     list-style: none;
 }
@@ -113,8 +116,8 @@ main {
 }
 
 /* projects */
-.projects, .about {
-    padding: 60px;
+.projects, .skills, .about {
+    padding: 40px 60px;
     display: flex;
     justify-content: space-between;
 }
@@ -128,7 +131,7 @@ aside a{
 aside li {
     padding: 10px 0;
 }
-.right {
+.right, .about-container {
     width: 85%;
 }
 .projects-container {
@@ -144,8 +147,9 @@ aside li {
 
 .card {
     width: 400px;
-    height: 300px;
+    height: 400px;
     padding: 20px;
+    border-radius: 20px;
     background-color: #fff;
     box-shadow: 10px 10px 20px #0000001a ;
     display: flex;
@@ -153,20 +157,30 @@ aside li {
 }
 .card img {
     width: auto;
-    height: 200px;
-}.card p {
+    height: 300px;
+    border-radius: 20px;
+}
+.card p  {
     padding-top: 20px;
-    font-size: .8em;
+    font-size: 1em;color: #594a3e;
+}
+.card a  {
+    padding-top: 20px;
+    color: #594a3e;
+
 }
 /* end projects */
 
 /* skills */
 .skills {
-
+    display: flex;
+    flex-direction: column;
 }
 .skills > p {
     padding: 20px;
     font-weight: 600;
+    padding-bottom: 40px;
+    align-self: center;
 }
 .container {
     display: flex;
@@ -177,11 +191,16 @@ aside li {
     flex-direction: column;
     align-items: center;
     background-color: #E8E4E0;
-    
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px #00000027;
+} 
+.tech-container h3 {
+    padding-top: 30px;
+    text-align: center;
 }
 .tech-list {
     width: 300px;
-    height: 400px;
+    height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -197,18 +216,50 @@ aside li {
     justify-content: space-between;
     padding: 5px;
 }
+.tech-list img {
+    width: 70%;
+    height: auto;
+}
 
 /* end skills */
+
+/* about */
+.about-container h3 {
+    padding: 5px 0;
+    color: #594a3e;
+}
+.about-box {
+    display: flex;
+    justify-content: space-between;
+}
+.about-box p {
+    padding: 10px 0;
+}
+.about-box img {
+    width: 40%;
+}
+.about-me, .experiences, .education {
+    width: 500px;
+    margin-top: 40px;
+}
+.experiences li li {
+    list-style: square inside;
+}
+/* end about */
 
 
 /* contact */
 .contact {
-    height: 600px;
-    background: linear-gradient(to right, #E8E4E0 10%, #fff);
+    margin-top: 10px;
+    height: 550px;
+    background: linear-gradient(135deg, #E8E4E0 5%, #fff);
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 60px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px #0000001a;
+
 }
 .contact-left img {
     width: 60%;
